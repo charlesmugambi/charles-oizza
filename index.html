@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles' pizzeria</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+
+</head>
+<body>
+    <div class="landing">
+        <div class="logo">
+            <h1>Charles' Pizzeria</h1>
+        </div>
+        <div class="slogan">
+            <p>People dissapoint but pizza never does</p>
+        </div>
+        <div class="button">
+            <button><a href="#make order">Order now!</a></button>
+        </div>
+        <div class="pizzas">
+            <div class="background1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="images/Hawaiian-pizza.jpg" alt="Hawaiian-pizza">
+                            <p>Hawaiian-pizza</p>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="images/MEAT pzza.jpeg" alt="meat pizza">
+                            <p>Meat pizza</p>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="images/peparoni.jpg" alt="pepperoni pizza">
+                            <p>pepperoni pizza</p>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="images/vegetable.jpg" alt="vegetable pizza">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Order Here</h1>
+<div class="order" id="make order">
+   <div class="background2">
+       <p>Order your pizza and we will deliver it in no time.</p>
+       <div class="container2">
+           <div class="row">
+               <div class="col md 4">
+                <form action="">
+                    <label for="select">Select Your Flavor</label>
+                    <select class="browser-default custom-select custom-select-md mb-3 name">
+                      <option value="Chicken Tikka">Chicken Tikka</option>
+                      <option value="PeriPeri Pizza">PeriPeri Pizza</option>
+                      <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
+                      <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
+                      <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+                      <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
+                    </select>
+                  <label for="select">Select Size</label>
+                  <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                    <option selected value="0">Select size here</option>
+                    <option value="large">Large -- sh. 1200</option>
+                    <option value="medium">Medium -- sh. 850</option>
+                    <option value="small">Small -- sh. 600</option>
+                  </select>
+                  <label for="crust">Choose your favorite Crust!</label>
+                    <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                        <option selected value="0">Select your preferred crust!</option>
+                      <option value="Crispy">Crispy -- sh. 200</option>
+                      <option value="Stuffed">Stuffed -- sh. 150</option>
+                      <option value="Gluten-free">Gluten-free-- sh. 180</option>
+                    </select>
+                  <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                      <label class="custom-control-label" for="Sausage">Sausage</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                      <label class="custom-control-label" for="Bacon">Bacon</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                      <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+                    </div>
+                    <br><br>
+                  <button type="submit" class="btn btn-orange proceed">Proceed</button>
+                  
+                </form>
+               </div>
+               <div class="col md 8">
+                <div id="information">
+                    <p>Your order will be processed and delivered within one hour of placing.</p>
+                    <p>Make sure you have the total amout for the order during order delivery delivery.</p>
+                    <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
+                    <p id="regards">Regards, Management</p>
+                  </div>
+                  <div class="choise">
+                    <h2>Your Order is:</h2>
+                    <div id="your-orders">
+                      <table class="table table-sm  pizzatable">
+                        <thead>
+                          <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Size</th>
+                            <th scope="col">Crust</th>
+                            <th scope="col">Topping</th>
+                            <th scope="col">Total</th>
+                          </tr>
+                        </thead>
+                        <tbody id="ordersmade">
+                          <tr>
+                            <td id="pizzaname"></td>
+                            <td id="pizzasize"></td>
+                            <td id="pizzacrust"></td>
+                            <td id="pizzatopping"></td>
+                            <td id="totals"></td>
+                          </tr>                  
+                        </tbody>
+                      </table>
+                      <p id="pizzatotal"></p>
+                      <p id="totalbill"></p> 
+                      <p id="addedprice">Delivery will cost sh. 150</p>
+                      <p id="finallmessage"></p>
+                    </div>
+                    <button class="btn btn-orange addPizza">Add Pizza</button>
+                    <button class="btn btn-orange" id="checkout">Checkout</button>
+                    <button class="btn btn-orange deliver">Home delivery?</button>
+                  </div>
+                  <div class="delivery">
+                      <form action="">
+                        <div class="form-group">
+                          <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                          <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                          <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                          <button class="btn btn-orange" id="final-order">Place Order</button>
+                        </div>
+                      </form>
+                  </div>
+                </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="contacts">
+       <div class="row">
+           <div class="col-md-6">
+            <h2>Customer Service.</h2>
+            <p>Email: charlesmugambi100@gmail.com</p>
+            <p>Phone number: 0795128869</p>
+            <h2>Location</h2>
+            <P>Kasarani|Hunters</P>
+            <p>0200,Hunters</p>
+           </div>
+           <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1046.2410512650604!2d36.92256089052777!3d-1.2189811716323677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTMnMDguNiJTIDM2wrA1NScyMi41IkU!5e1!3m2!1sen!2ske!4v1599395204455!5m2!1sen!2ske" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+           </div>
+       </div>
+   </div>    
+   <script src="js/scripts.js"></script>
+   <script src="js/jquery-3.5.1.js"></script>  
+</body>
+</html>

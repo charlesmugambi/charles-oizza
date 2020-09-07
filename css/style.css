@@ -1,0 +1,55 @@
+.landing{
+    background-image:url(../images/darkpizza.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: white;
+}
+.slogan p {
+    color: white;
+    text-align: center;
+
+}
+.button {
+    color: white;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 50%;
+}
+.container img{
+    height: 60%;
+    width: 80%;
+    margin-top: 50px;
+}
+.pizzas{
+    background-color: white;
+    border: solid black;
+
+
+}
+.order{
+    background: rgba(10, 9, 9, 0.56);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    margin-left: 20px;
+    
+}
+button{
+    color: white;
+}
+.contacts {
+    background-color: black;
+    color: white;
+}
+.contacts .row{
+    margin-left: 20px;
+    margin-top: 0px;
+}
+.col-md-6, .col-md-6{
+    margin-top: 40px;
+}
