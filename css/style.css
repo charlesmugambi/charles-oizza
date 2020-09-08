@@ -53,3 +53,16 @@ button{
 .col-md-6, .col-md-6{
     margin-top: 40px;
 }
+#button{
+    color: rgb(255, 251, 255);
+}
+#final-order{
+    color: rgb(255, 251, 255);
+}
+#addpizza, #homedelivery, #checkout{
+    color: rgb(255, 251, 255);
+}
+.table{
+    color: rgb(255, 251, 255);
+    background-color: white;
+}
