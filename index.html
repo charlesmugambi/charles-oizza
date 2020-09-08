@@ -6,6 +6,7 @@
     <title>Charles' pizzeria</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <script src="js/jquery-3.5.1.js"></script>  
 
 </head>
 <body>
@@ -87,7 +88,7 @@
                       <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
                     </div>
                     <br><br>
-                  <button type="submit" class="btn btn-orange proceed">Proceed</button>
+                  <button type="submit" class="btn btn-orange proceed" id="button">Proceed</button>
                   
                 </form>
                </div>
@@ -103,7 +104,7 @@
                     <div id="your-orders">
                       <table class="table table-sm  pizzatable">
                         <thead>
-                          <tr>
+                          <tr class="table">
                             <th scope="col">Name</th>
                             <th scope="col">Size</th>
                             <th scope="col">Crust</th>
@@ -126,9 +127,9 @@
                       <p id="addedprice">Delivery will cost sh. 150</p>
                       <p id="finallmessage"></p>
                     </div>
-                    <button class="btn btn-orange addPizza">Add Pizza</button>
+                    <button class="btn btn-orange addPizza" id="addpizza">Add Pizza</button>
                     <button class="btn btn-orange" id="checkout">Checkout</button>
-                    <button class="btn btn-orange deliver">Home delivery?</button>
+                    <button class="btn btn-orange deliver" id="homedelivery">Change Location?</button>
                   </div>
                   <div class="delivery">
                       <form action="">
@@ -136,7 +137,7 @@
                           <input type="text" id="name" class="form-control mb-3" placeholder="Name">
                           <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
                           <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
-                          <button class="btn btn-orange" id="final-order">Place Order</button>
+                          <button class="btn btn-orange" id="final-order" class="button2">Place Order! </button>
                         </div>
                       </form>
                   </div>
@@ -161,6 +162,5 @@
        </div>
    </div>    
    <script src="js/scripts.js"></script>
-   <script src="js/jquery-3.5.1.js"></script>  
 </body>
 </html>
